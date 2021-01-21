@@ -1,0 +1,9 @@
+.container {
+    box-sizing: border-box;
+}
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+.vista-dos{
+    margin: auto;
+}

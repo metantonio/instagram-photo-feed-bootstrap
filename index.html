@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Bootstrap</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-light bg-light fixed-top px-5">
+           <div class="navbar-header mx-5">
+                <span class="navbar-brand text-secondary"><h3><i class="fab fa-instagram ml-5 mr-2"></i><strong>Instagram</strong></h3></span>
+           </div>
+           <div class="navbar navbar-left mx-5">
+                <!-- Button trigger modal -->
+               <a href="#Modal1" role="button" class="btn btn-success" data-toggle="modal" data-backdrop="false">Create a new post</a>
+                <!-- Modal -->
+               <div id="Modal1" data-backdrop="false" class="modal fade mx-3" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <div class="form-group row px-3">
+                                    <textarea class="form-control" rows="3" id="Comment ..."></textarea>
+                                </div>
+                                <div class="icons">
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-camera"></i></button>
+                                    <button type="button" class="btn btn-outline-dark"><i class="fas fa-map-marker-alt"></i></button>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="dropdown mr-5">
+                  <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-cog text-secondary ml-1"></i>
+                  </button>
+                  <div class="dropdown-menu mr-5" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <hr/>
+                      <a class="dropdown-item" href="#">Log out</a>
+                   </div>
+               </div>
+          </div>       
+        </nav>
+    </header>
+    <nav class="pt-4 m-3">
+        <ul class="nav nav-pills d-flex justify-content-center pt-5" id="nav-pills" role="tablist">
+            <li class="nav-item" role="presentation">
+                <span class="nav-link active bg-light text-secondary" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                    aria-controls="pills-home" aria-selected="true"><i class="fas fa-th"></i>
+                </span>
+            </li>
+            <li class="nav-item" role="presentation">
+                <span class="nav-link bg-light text-secondary" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                    aria-controls="pills-profile" aria-selected="false"><i class="fas fa-square"></i>
+                </span>
+            </li>
+        </ul>
+    </nav>
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="container-fluid">
+                <div class="row card-group">
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=11" class="card-img-top" alt="first image">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=12" class="card-img-top" alt="secondary image">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=13" class="card-img-top" alt="third image">
+                    </div>
+                </div>
+                <div class="row card-group">
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=14" class="card-img-top" alt="fourth image">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=15" class="card-img-top" alt="fifth image">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=16" class="card-img-top" alt="sixth image">
+                    </div>
+                </div>
+                <div class="row card-group">
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=17" class="card-img-top" alt="seventh image">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=18" class="card-img-top" alt="eighth image">
+                    </div>
+                    <div class="card">
+                        <img src="https://picsum.photos/300/200?random=19" class="card-img-top" alt="ninth image">
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 d-flex flex-column">
+                        <div class="card mb-3 p-1">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>My first photo</h5>
+                                <p class="text-muted">12/20</p>
+                            </div>
+                            <div class="card-body">
+                            <img src="https://picsum.photos/700/500?random=1" class="img-fluid" alt="first image">
+                            <p><strong>23 likes</strong></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="card-text"><small class="text-muted">🤍 Comment ...</small></p>
+                                </div>
+                                <div class="text-muted right">
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>My second photo</h5>
+                                <p class="text-muted">10/20</p>
+                            </div>
+                            <div class="card-body">
+                            <img src="https://picsum.photos/700/500?random=2" class="img-fluid" alt="second image">
+                            <p><strong>40 likes</strong></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="card-text"><small class="text-muted">🤍 Comment ...</small></p>
+                                </div>
+                                <div class="text-muted right">
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>My third photo</h5>
+                                <p class="text-muted">09/20</p>
+                            </div>
+                            <div class="card-body">
+                            <img src="https://picsum.photos/700/500?random=3" class="img-fluid" alt="third image">
+                            <p><strong>15 likes</strong></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="card-text"><small class="text-muted">🤍 Comment ...</small></p>
+                                </div>
+                                <div class="text-muted right">
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card mb-3 p-1">
+                            <div class="card-header d-flex justify-content-between">
+                                <h5>My fourth photo</h5>
+                                <p class="text-muted">08/20</p>
+                            </div>
+                            <div class="card-body">
+                            <img src="https://picsum.photos/700/500?random=4" class="img-fluid" alt="fourth image">
+                            <p><strong>10 likes</strong></p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <p class="card-text"><small class="text-muted">🤍 Comment ...</small></p>
+                                </div>
+                                <div class="text-muted right">
+                                    <i class="fas fa-ellipsis-v "></i>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
