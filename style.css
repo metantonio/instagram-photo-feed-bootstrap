@@ -7,7 +7,7 @@
 .vista-dos{
     margin: auto;
 }
-.active {
+.active:active {
     background-color: gray;
     border-radius: 10px;
 }
