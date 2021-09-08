@@ -7,7 +7,7 @@
 .vista-dos{
     margin: auto;
 }
-span:active *{
+span:active {
     background-color: gray !important;
     border-radius: 10px !important;
     padding: 15px;
